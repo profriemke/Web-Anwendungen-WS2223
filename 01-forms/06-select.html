@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="form.php" method="post">
+      <select name="studiengang">
+        <option value="kein">kein</option>
+        <option value="OM7">OMM</option>
+        <option value="WI7">Wirtschaftsinformatik</option>
+      </select>
+      <input type="radio" name="fach" id="wi7" value="wi7" />
+      <label for="wi7">Wirtschaftsinformatik</label>
+      <input type="radio" name="fach" id="om7" value="om7" />
+      <label for="om7">Online-Medien-Management</label>
+      <input type="range" name="note" max="5" min="1" step="0.5" />
+      <input list="programs" name="studiengang" />
+      <datalist id="programs">
+        <option value="Online-Medien-Management"></option>
+        <option value="Wirtschaftsinformatik"></option>
+        <option value="Informationsdesign"></option>
+      </datalist>
+      <input type="text" name="wetter" required />
+      <input type="date" name="datum" />s
+      <button type="submit">absenden</button>
+    </form>
+  </body>
+</html>
