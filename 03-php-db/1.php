@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-    $pdo=new PDO(...);
+    $pdo=new PDO('mysql:: host=mars.iuk.hdm-stuttgart.de; dbname=u-gurzki', 'gurzki', '$jhsfnb4BBVsafd', array('charset'=>'utf8'));
     $statement = $pdo->prepare("SELECT * FROM user");
     if($statement->execute()){
        while( $row = $statement->fetch()){
