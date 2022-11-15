@@ -19,6 +19,7 @@
                 $_SESSION["login"] = $row["login"];
                 $_SESSION["id"] = $row["login"];
             }else{
+                //Fehlerfall: Es gibt diesen Nutzer in der DB nicht
                 echo "Du kommst hier nicht rein!";
             }
 
@@ -27,7 +28,7 @@
             echo $statement->errorInfo()[2];
         }
         echo "Nutzer: ".$_SESSION["login"];
-
+ 
 ?>
     
 </body>
