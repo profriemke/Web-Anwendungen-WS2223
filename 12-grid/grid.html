@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
         #box{
             display: grid;
             grid-template-columns: auto auto auto auto;
             grid-template-rows: 2fr 5fr 1fr;
+            height: 100vh;
+            width: 100vw;
         }
         #navi{
             background-color: coral;
@@ -17,16 +23,29 @@
             grid-column: 1 /span 4;
         }
          #main{
-            background-color: rgb(80, 255, 153);
+            background-image: linear-gradient(yellow, red);
             grid-row: 2;
             grid-column: 2 /span 3;
+        }
+        #unternavi{
+            background-color: blueviolet;
+            grid-row: 2;
+            grid-column: 1 /span 1;
+
+        }
+        #footer{
+            background-color: gold;
+            grid-row: 3;
+            grid-column: 1 /span 4;
         }
     </style>
 </head>
 <body>
     <div id="box">
         <div id="navi">navi</div>
+        <div id="unternavi">unternavi</div>
         <div id="main">main</div>
+        <div id="footer">footer</div>
     </div>
 </body>
 </html>
